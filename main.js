@@ -141,7 +141,7 @@ function parseGuess(guess){
 	if(guess === null || guess.length !== 2){
 		alert("Oops, please enter a letter and a number on the board.");
 	}else{
-		let firstChar = guess.charAt(0);
+		let firstChar = guess.charAt(0).toUpperCase();
 		
 		let row = alphabet.indexOf(firstChar);
 		let column = guess.charAt(1);
@@ -176,7 +176,8 @@ function handleKeyPress(e){
 
 function handleFireButton(b){
 	let guessInput = $("#guessInput");
-	let guess = b || guessInput.val();
+	let guess = guessInput.val() || b;
+	
 	controller.processGuess(guess);
 	guessInput.val('');
 }
