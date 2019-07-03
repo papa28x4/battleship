@@ -127,8 +127,9 @@ let controller = {
 			this.guesses++;
 			let hit = model.fire(location);
 			if(hit && model.shipsSunk === model.numShips){
-				playWinningAudio()
-				view.displayMessage("You sank all my battleships, in " + this.guesses + " guesses");
+				let accuracy = Math.round((model.numShips * model.shipLength / this.guesses) * 100);
+				playWinningAudio();
+				view.displayMessage("You sank all my battleships, in " + this.guesses + " guesses <br/><br/> Shooting Accuracy: " + accuracy + "%");
 				gameLock();
 			}
 		}
