@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+	<link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
+	
+    <title>Battleship</title>
+  </head>
+  <body>
+	<div id="board">
+		<div id="messageArea"></div>
+		<table id="gameBoard">
+			<tr>
+				<td id="00" data-cell="A0" ></td>
+				<td id="01" data-cell="A1" ></td>
+				<td id="02" data-cell="A2"></td>
+				<td id="03" data-cell="A3"></td>
+				<td id="04" data-cell="A4"></td>
+				<td id="05" data-cell="A5"></td>
+				<td id="06" data-cell="A6"></td>	
+			</tr>
+			<tr>
+				<td id="10" data-cell="B0"></td>
+				<td id="11" data-cell="B1"></td>
+				<td id="12" data-cell="B2"></td>
+				<td id="13" data-cell="B3"></td>
+				<td id="14" data-cell="B4"></td>
+				<td id="15" data-cell="B5"></td>
+				<td id="16" data-cell="B6"></td>	
+			</tr>
+			<tr>
+				<td id="20" data-cell="C0"></td>
+				<td id="21" data-cell="C1"></td>
+				<td id="22" data-cell="C2"></td>
+				<td id="23" data-cell="C3"></td>
+				<td id="24" data-cell="C4"></td>
+				<td id="25" data-cell="C5"></td>
+				<td id="26" data-cell="C6"></td>	
+			</tr>
+			<tr>
+				<td id="30" data-cell="D0"></td>
+				<td id="31" data-cell="D1"></td>
+				<td id="32" data-cell="D2"></td>
+				<td id="33" data-cell="D3"></td>
+				<td id="34" data-cell="D4"></td>
+				<td id="35" data-cell="D5"></td>
+				<td id="36" data-cell="D6"></td>	
+			</tr>
+		
+			<tr>
+				<td id="40" data-cell="E0"></td>
+				<td id="41" data-cell="E1"></td>
+				<td id="42" data-cell="E2"></td>
+				<td id="43" data-cell="E3"></td>
+				<td id="44" data-cell="E4"></td>
+				<td id="45" data-cell="E5"></td>
+				<td id="46" data-cell="E6"></td>	
+			</tr>
+			
+			<tr>
+				<td id="50" data-cell="F0"></td>
+				<td id="51" data-cell="F1"></td>
+				<td id="52" data-cell="F2"></td>
+				<td id="53" data-cell="F3"></td>
+				<td id="54" data-cell="F4"></td>
+				<td id="55" data-cell="F5"></td>
+				<td id="56" data-cell="F6"></td>	
+			</tr>
+			
+			<tr>
+				<td id="60" data-cell="G0"></td>
+				<td id="61" data-cell="G1"></td>
+				<td id="62" data-cell="G2"></td>
+				<td id="63" data-cell="G3"></td>
+				<td id="64" data-cell="G4"></td>
+				<td id="65" data-cell="G5"></td>
+				<td id="66" data-cell="G6"></td>	
+			</tr>
+		
+		</table>
+		<form>
+			<input type="text" id="guessInput" placeholder="A0">
+			<input type="button" id="fireButton" value="Fire!">
+		
+		</form>
+	
+	</div>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+  	<script src="main.js"></script>
+  </body>
+ </html>
